@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+​
+<html lang="US">
+
+<head>
+    ​
+    <script src="jquery-3.4.1.min.js"></script>
+    <meta charset="UTF-8" />
+    ​
+    <title>Get Fit!</title>
+    <!-- --------------------------------------------------------- -->
+    ​
+    <!-- Rendering for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Reset Style CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Orbitron&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+​
+
+<body>
+    <div style="background-color:#077abc;" class="center" class="jumbotron">
+        <h1 class="text-center TrainScheduler-Title"
+            style="font-family: 'Merriweather', serif; font-size: calc(16px + 2.5vw); color:aliceblue;">
+            Get Fit
+        </h1>
+        <h2 class="text-center TrainScheduler-Subtitle"
+            style="font-family: 'Merriweather', serif; font-size:calc(16px + 0.6vw); color:aliceblue;">
+            No Cheat Days!
+        </h2>
+    </div>
+    <br />
+    ​
+    <form class="bodyCenter">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col top_row" style="background-color: #077abc; border: 0px;">
+                        Please fill out the fields below
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <div class="form-group">
+            <label for="InputName">First and Last Name</label>
+            <input type="text" class="form-control" id="InputName" aria-describedby="NameHelp"
+                placeholder="Please enter your full name here" />
+        </div>
+        <div class="form-group">
+            <label for="InputName">Your email address</label>
+            <input type="text" class="form-control" id="InputName" aria-describedby="NameHelp"
+                placeholder="Please enter your email address here" />
+        </div>
+        <div class="form-group">
+            <label for="InputDestination">Your preferred daily calories budget per day</label>
+            <input type="text" class="form-control" id="InputDestination" placeholder="E.g 1900"
+                onfocus="this.type='number';">
+        </div>
+        <div class="form-group">
+            <label for="InputDestination">Your height in cm</label>
+            <input type="text" class="form-control" id="InputDestination" placeholder="E.g 177"
+                onfocus="this.type='number';">
+        </div>
+        <div>
+            <form>
+                <p>Please select your gender:</p>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other<br>
+                <input type="radio" name="gender" value="prefer not to answer"> Prefer not to answer<br>
+
+        </div>
+        <div class="bodyCenter" class="center">
+            <label for="InputDestination">Please enter your age</label>
+            <input type="text" class="form-control" id="InputDestination" placeholder="E.g 23"
+                onfocus="this.type='number';">
+    </form>
+    <div> <button type="button"> Submit </div>
+    </div>
+
+    <br>
+    </table>
+    <div style="background-color:#077abc;" class="center" class="jumbotron">
+        <footer>
+            <p style="font-family: 'Merriweather', serif; font-size: 25px; color:aliceblue;"> &copy; 2019 GetFitInc.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
