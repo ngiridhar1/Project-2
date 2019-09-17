@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
         len: [40]
       }
     },
-   email: {
+    email: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
@@ -22,33 +22,26 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     height: {
-      type: DataTypes.INTEGER,
-     
+      type: DataTypes.INTEGER
     },
     weight: {
-      type: DataTypes.INTEGER,
-     
+      type: DataTypes.INTEGER
     },
     age: {
-      type: DataTypes.INTEGER,
-      
+      type: DataTypes.INTEGER
     },
     gender: {
-      type: DataTypes.INTEGER,
-     
+      type: DataTypes.INTEGER
     },
     calbudget: {
-      type: DataTypes.INTEGER,
-      
+      type: DataTypes.INTEGER
     },
     indate: {
-      type: DataTypes.DATEONLY,
-     
+      type: DataTypes.DATEONLY
     },
     calories: {
-      type: DataTypes.INTEGER,
-     
-    } 
+      type: DataTypes.INTEGER
+    }
   });
   return Post;
 };
