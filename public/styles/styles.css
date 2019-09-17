@@ -1,119 +1,124 @@
 .center {
-  padding: 25px 0;
-  border-right: 75px solid white; 
-  border-left: 75px solid white;
-  border-top: 0px solid white;
-  border-bottom: 0px solid white;
-  text-align: center;
+    padding: 25px 0;
+    border-right: 75px solid white;
+    border-left: 75px solid white;
+    border-top: 0px solid white;
+    border-bottom: 0px solid white;
+    text-align: center;
 }
 
 .bodyCenter {
-  padding: 70px 0;
-  border-right: 125px solid white; 
-  border-left: 125px solid white;
-  border-top: 0px solid white;
-  border-bottom: 0px solid white;
-  text-align: center;
+    padding: 70px 0;
+    border-right: 125px solid white;
+    border-left: 125px solid white;
+    border-top: 0px solid white;
+    border-bottom: 0px solid white;
+    text-align: center;
 }
 
- /* header css */
 
- #header-tron {
-  background-color: #65c3ba;
-  color: snow;
-  text-align: center;
-  padding: 1rem;
-  margin-bottom: 7rem;
+/* header css */
+
+#header-tron {
+    background-color: #65c3ba;
+    color: snow;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 7rem;
 }
 
 #img-suggestion-well {
-  padding-bottom: 7em;
+    padding-bottom: 7em;
+}
+
+.lable {
+    float: left;
 }
 
 .day-tracker-well {
-  background-color: rgb(201, 203, 204)
+    background-color: rgb(201, 203, 204)
 }
 
 .figure {
-  padding-left: 5em;
+    padding-left: 5em;
 }
 
 .list-group-item {
-  font-size: 10px;
+    font-size: 10px;
 }
 
 .card {
-  background-color: #009688;
+    background-color: #009688;
 }
 
 #card-head {
-  background-color: #009688;
-  color: snow;
+    background-color: #009688;
+    color: snow;
 }
 
 .accordion {
-  /* padding: 1em 0em 0em 5em */
+    /* padding: 1em 0em 0em 5em */
 }
 
 .day-tracker-well {
-  margin: 0 6em 0 6em;
+    margin: 0 6em 0 6em;
 }
 
 #headingOne {
-  background-color: #ffeead;
-  color: snow;
-  /* margin: 0em 0 2em 0; */
+    background-color: #ffeead;
+    color: snow;
+    /* margin: 0em 0 2em 0; */
 }
 
 #headingTwo {
-  background-color: #96ceb4;
-  color: snow;
-  /* margin: 0em 0 2em 0; */
+    background-color: #96ceb4;
+    color: snow;
+    /* margin: 0em 0 2em 0; */
 }
 
 #headingThree {
-  background-color: #ffeead;
-  color: snow;
-  /* margin: 0em 0 2em 0; */
+    background-color: #ffeead;
+    color: snow;
+    /* margin: 0em 0 2em 0; */
 }
 
 #headingFour {
-  background-color: #96ceb4;
-  color: snow;
-  /* margin: 0em 0 2em 0; */
+    background-color: #96ceb4;
+    color: snow;
+    /* margin: 0em 0 2em 0; */
 }
 
 #headingFive {
-  background-color: #ffeead;
-  color: snow;
-  /* margin: 0em 0 2em 0; */
+    background-color: #ffeead;
+    color: snow;
+    /* margin: 0em 0 2em 0; */
 }
 
 #headingSix {
-  background-color: #96ceb4;
-  color: snow;
-  /* margin: 0em 0 2em 0; */
+    background-color: #96ceb4;
+    color: snow;
+    /* margin: 0em 0 2em 0; */
 }
 
 #headingSeven {
-  background-color: #ffeead;
-  color: snow;
+    background-color: #ffeead;
+    color: snow;
 }
 
 #btn-css {
-  padding-left: 45%;
-  color: snow;
-  font-size: 16px;
-  margin: 2em 0 2em 0;
-  font-weight: bolder;
+    padding-left: 45%;
+    color: snow;
+    font-size: 16px;
+    margin: 2em 0 2em 0;
+    font-weight: bolder;
 }
 
 .footer {
-  width: 100%;
-  background-color: #65c3ba;
-  color: white;
-  text-align: center;
-  margin: 2em 0 0 0;
-  padding: 2em 2em 2em 2em;
-  /* margin: 2em 2em 2em 2em; */
+    width: 100%;
+    background-color: #65c3ba;
+    color: white;
+    text-align: center;
+    margin: 2em 0 0 0;
+    padding: 2em 2em 2em 2em;
+    /* margin: 2em 2em 2em 2em; */
 }
