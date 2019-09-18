@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-​
+<!DOCTYPE html> ​
 <html lang="US">
 
 <head>
 
-    <meta charset="UTF-8" />
-    ​
+    <meta charset="UTF-8" /> ​
     <title>Get Fit!</title>
     <!-- --------------------------------------------------------- -->
     ​
@@ -35,76 +33,74 @@
 ​
 
 <body>
-    <div style="background-color:#077abc;" class="center" class="jumbotron">
-        <h1 class="text-center TrainScheduler-Title"
-            style="font-family: 'Merriweather', serif; font-size: calc(16px + 2.5vw); color:aliceblue;">
-            Get Fit
-        </h1>
-        <h2 class="text-center TrainScheduler-Subtitle"
-            style="font-family: 'Merriweather', serif; font-size:calc(16px + 0.6vw); color:aliceblue;">
-            No Cheat Days!
-        </h2>
-    </div>
-    <br />
-    ​ <div> <button type="button" id="saveForm" class="btn btn-primary"> Login </div>
-    <form class="bodyCenter">
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col top_row" style="background-color: #077abc; border: 0px;">
-                        First time user? Please fill out the fields below
-                    </th>
-                </tr>
-            </thead>
-        </table>
-        <div class="form-group">
-            <label for="InputName">First and Last Name</label>
-            <input type="text" class="form-control" id="InputName" aria-describedby="NameHelp"
-                placeholder="Please enter your full name here" />
-        </div>
-        <div class="form-group">
-            <label for="InputName">Your email address</label>
-            <input type="text" class="form-control" id="InputName" aria-describedby="NameHelp"
-                placeholder="Please enter your email address here" />
-        </div>
-        <div class="form-group">
-            <label for="InputDestination">Your preferred daily calories budget per day</label>
-            <input type="text" class="form-control" id="InputDestination" placeholder="E.g 1900"
-                onfocus="this.type='number';">
-        </div>
-        <div class="form-group">
-            <label for="InputDestination">Your height in cm</label>
-            <input type="text" class="form-control" id="InputDestination" placeholder="E.g 177"
-                onfocus="this.type='number';">
-        </div>
-        <div class="form-group">
-            <label for="InputDestination">Your weight in lbs</label>
-            <input type="text" class="form-control" id="InputDestination" placeholder="E.g 150lbs"
-                onfocus="this.type='number';">
-        </div>
-        <div>
-            <form>
-                <p>Please select your gender:</p>
-                <input type="radio" name="gender" value="male"> Male<br>
-                <input type="radio" name="gender" value="female"> Female<br>
-              
+    <!-- Head navbar -->
 
-        </div>
-        <div class="bodyCenter" class="center">
-            <label for="InputDestination">Please enter your age</label>
-            <input type="text" class="form-control" id="InputDestination" placeholder="E.g 23"
-                onfocus="this.type='number';">
-    </form>
-    <div> <button type="button"> Submit </div>
+
+    <div id="header-tron" class="jumbotron">
+        <h1 class="display-4">Get-Fit</h1>
+        <p class="lead" class="text-center">-No Days Off!-</p>
+        <hr class="my-4">
+        <p>"At the end of the day we are accountable to ourselves - our success is a result of what we do." <small class="text-muted">Catherine Pulsifer</small></p>
+
     </div>
 
+
+    <div class="signUpWell">
+
+
+        <form class="bodyCenter">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col top_row" style="background-color: #ff6f69; border: 0px; text-align: center;">
+                            First time user? Please fill out the fields below
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <div class="form-group">
+                <label for="InputName">First and Last Name</label>
+                <input type="text" class="form-control" id="InputName" aria-describedby="NameHelp" placeholder="Please enter your full name here" />
+            </div>
+            <div class="form-group">
+                <label for="InputName">Your email address</label>
+                <input type="text" class="form-control" id="InputName" aria-describedby="NameHelp" placeholder="Please enter your email address here" />
+            </div>
+            <div class="form-group">
+                <label for="InputDestination">Your preferred daily calories budget per day</label>
+                <input type="text" class="form-control" id="InputDestination" placeholder="E.g 1900" onfocus="this.type='number';">
+            </div>
+            <div class="form-group">
+                <label for="InputDestination">Your height in cm</label>
+                <input type="text" class="form-control" id="InputDestination" placeholder="E.g 177" onfocus="this.type='number';">
+            </div>
+            <div class="form-group">
+                <label for="InputDestination">Your weight in lbs</label>
+                <input type="text" class="form-control" id="InputDestination" placeholder="E.g 150lbs" onfocus="this.type='number';">
+            </div>
+            <div>
+                <form>
+                    <p>Please select your gender:</p>
+                    <input type="radio" name="gender" value="male"> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+
+
+            </div>
+            <div class="bodyCenter" class="center">
+                <label for="InputDestination">Please enter your age</label>
+                <input type="text" class="form-control" id="InputDestination" placeholder="E.g 23" onfocus="this.type='number';">
+                </form>
+                <div> <button type="button"> Submit </div>
+    </div>
+</div>
     <br>
     </table>
-    <div style="background-color:#077abc;" class="center" class="jumbotron">
-        <footer>
-            <p style="font-family: 'Merriweather', serif; font-size: 25px; color:aliceblue;"> &copy; 2019 GetFitInc.</p>
-        </footer>
-    </div>
+        
+                <div class="footer">
+                        <p>Contact us | Leave a Review | Donate  </p>
+                        <p>&copy; 2019 GetFitInc.</p>
+                        <p> YGLN GROUP</p>
+                    </div>
 </body>
 
 </html>
