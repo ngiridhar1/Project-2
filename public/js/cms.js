@@ -1,12 +1,11 @@
 $(document).ready(function() {
-
+    var postId;
     getPostData(postId);
-  }
+  
 
-  // Getting jQuery references to the post body, title, form, and category select
+  // Getting jQuery references to the post all inputs
+  var nameInput = $("#name"); 
   var emailInput = $("#email");
-  var passwordInput = $("#password");
-
   var heightInput = $("#height");
   var weightInput = $("#weight");
   var ageInput =  $("#age");
@@ -15,12 +14,11 @@ $(document).ready(function() {
   var indateInput = $("#indate");
   var caloriesInput =$("#calories"); 
 
-
   // Adding an event listener for when the form is submitted
   $(cmsForm).on("submit", function handleFormSubmit(event) {
     event.preventDefault();
     // Wont submit the post if we are missing a body or a title
-    if (!emailInput.val().trim() || !passwordInput.val().trim() ||
+    if (!emailInput.val().trim() || 
        !heightInput.val().trim() || !weightInput.val().trim() || 
        !ageInput.val().trim() || !genderInput.val().trim() ||
        !calbudgetInput.val().trim() || !indateInput.val().trim() ||
@@ -30,9 +28,9 @@ $(document).ready(function() {
     }
     // Constructing a newPost object to hand to the database
     var newPost = {
-	  name: nameInput.val().trim(),
+	    name: nameInput.val().trim(),
       email: emailInput.val().trim(),
-      password: passwordInput.val().trim(),
+     
       height: heightInput.val(),
       weight: weightInput.val(),
       age: ageInput.val(),
@@ -47,10 +45,10 @@ $(document).ready(function() {
   
   });
 
-  // Submits a new post and brings user to blog page upon completion
+  // Submits a new post and brings user to new signup page
   function submitPost(Post) {
-    $.post("/api/posts/signup", Post, function() {
-      window.location.href = "/signup";
+    $.post("/api/posts/index", Post, function() {
+      window.location.href = "/index";
     });
   }
 
@@ -63,7 +61,7 @@ $(document).ready(function() {
 		
 		nameInput.val(data.name);
         emailInput.val(data.email);
-        passwordInput.val(data.password);
+  
         heightInput.val(data.height);
         weightInput.val(data.weight),
         ageInput.val(data.age);
