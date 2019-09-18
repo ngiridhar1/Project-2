@@ -12,28 +12,43 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-  // Get route for returning posts of a specific user email
+// Get route for returning posts of a specific user email
   app.get("/api/posts/category/:email", function(req, res) {
-    db.Post.findAll({
+    db.Post.findOne({
       where: {
         email: req.params.email,
-        calories:  {[Op.gt]: 0},
-        limit: 7
-      }
+        calories:  {[Op.eq]: null},
+        limit: 1
+    }
     })
       .then(function(dbPost) {
         res.json(dbPost);
       });
   });
 
-  
-  // POST route for saving a new post
-  app.post("/api/signup", function(req, res) {
+  // POST route for saving a new user
+  app.post("/api/index.html", function(req, res) {
     console.log(req.body);
     db.Post.create({
       name: req.body.name,
       email: req.body.email,
-      password: req.body.password,
+      height: req.bodyheight,
+      weight: req.body.weight,
+      age: req.body.age,
+      gender: req.body.gender,
+      calbudget: req.body.calbudget
+    })
+      .then(function(dbPost) {
+        res.json(dbPost);
+      });
+  });
+  
+  // POST route for saving a new post
+  app.post("/api/page2.html", function(req, res) {
+    console.log(req.body);
+    db.Post.create({
+      name: req.body.name,
+      email: req.body.email,
       height: req.bodyheight,
       weight: req.body.weight,
       age: req.body.age,
