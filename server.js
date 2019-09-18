@@ -20,6 +20,10 @@ app.use(express.json());
 
 // Static directory
 app.use(express.static("public"));
+app.use(
+  "/scripts",
+  express.static(__dirname + "/node_modules/nutrition-label-jquery-plugin/")
+);
 
 // Routes
 // =============================================================
