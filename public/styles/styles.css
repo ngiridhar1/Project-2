@@ -1,20 +1,30 @@
-.center {
-    padding: 25px 0;
-    border-right: 75px solid white;
-    border-left: 75px solid white;
-    border-top: 0px solid white;
-    border-bottom: 0px solid white;
-    text-align: center;
+/* page 1 css */
+
+.signUpWell {
+    margin: 0 30% 4em 30%;
+    border-style: solid;
+    border-color: #ffeead;
+    border-width: 5px;
+    padding: 30px;
 }
 
-.bodyCenter {
-    padding: 70px 0;
-    border-right: 125px solid white;
-    border-left: 125px solid white;
-    border-top: 0px solid white;
-    border-bottom: 0px solid white;
-    text-align: center;
+.signInWell {
+    flex-flow: row
 }
+
+.form-group {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.form-control {
+    width: 30%;
+    height: 25px;
+}
+
+
+/* page 2 css */
 
 
 /* header css */
@@ -48,14 +58,13 @@
 }
 
 .card {
-    background-color: #009688;
+    background-color: #ff6f69;
 }
 
 #card-head {
-    background-color: #009688;
+    background-color: #ff6f69;
     color: snow;
 }
-
 
 .day-tracker-well {
     margin: 0 6em 0 6em;
@@ -63,41 +72,72 @@
 
 #headingOne {
     background-color: #ffeead;
+    -webkit-text-fill-color: #6c757d;
     color: snow;
+    border-style: solid;
+    border-width: 5px;
+    border-color: snow;
     /* margin: 0em 0 2em 0; */
 }
 
 #headingTwo {
+    border-style: solid;
+    border-width: 5px;
+    border-color: snow;
     background-color: #96ceb4;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
     color: snow;
     /* margin: 0em 0 2em 0; */
 }
 
 #headingThree {
+    -webkit-text-fill-color: #6c757d;
+    border-style: solid;
+    border-width: 5px;
+    border-color: snow;
     background-color: #ffeead;
-    color: snow;
+    color: black;
     /* margin: 0em 0 2em 0; */
 }
 
 #headingFour {
+    border-style: solid;
+    border-width: 5px;
+    border-color: snow;
     background-color: #96ceb4;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
     color: snow;
     /* margin: 0em 0 2em 0; */
 }
 
 #headingFive {
+    -webkit-text-fill-color: #6c757d;
+    border-style: solid;
+    border-width: 5px;
+    border-color: snow;
     background-color: #ffeead;
     color: snow;
     /* margin: 0em 0 2em 0; */
 }
 
 #headingSix {
+    -webkit-text-stroke-color: black;
+    border-style: solid;
+    border-width: 5px;
+    border-color: snow;
+    -webkit-text-stroke-width: .5px;
     background-color: #96ceb4;
     color: snow;
     /* margin: 0em 0 2em 0; */
 }
 
 #headingSeven {
+    -webkit-text-fill-color: #6c757d;
+    border-style: solid;
+    border-width: 5px;
+    border-color: snow;
     background-color: #ffeead;
     color: snow;
 }
@@ -108,4 +148,39 @@
     font-size: 16px;
     margin: 2em 0 2em 0;
     font-weight: bolder;
+}
+
+.mb-3,
+.my-3 {
+    background-color: #ff6f69;
+    -webkit-text-fill-color: snow;
+}
+
+#finishBtn {
+    background-color: #ff6f69;
+    color: snow;
+}
+
+#youtubebtn {
+    background-color: #ff6f69;
+}
+
+.footer {
+    width: 100%;
+    background-color: #65c3ba;
+    color: white;
+    text-align: center;
+    margin: 2em 0 0 0;
+    padding: 2em 2em 2em 2em;
+    /* margin: 2em 2em 2em 2em; */
+    width: 100%;
+    background-color: #65c3ba;
+    color: white;
+    text-align: center;
+    margin: 2em 0 0 0;
+    padding: 2em 2em 2em 2em;
+    /* margin: 2em 2em 2em 2em; */
+}
+
+
 }
