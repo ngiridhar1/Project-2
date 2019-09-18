@@ -5,10 +5,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="public/styles/styles.css">
+    <link rel="stylesheet" href="../public/styles/styles.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- include the needed font from google api -->
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Archivo+Black" />
+        <!-- include the nutrition label plugin css file -->
+        <link rel="stylesheet" type="text/css" href="/scripts/dist/css/nutritionLabel-min.css">
+        <!-- include the jquery library -->
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- include the nutrition label plugin js file -->
+        <script type="text/javascript" src="/scripts/dist/js/nutritionLabel-min.js"></script>
     <title>Get-Fit</title>
 </head>
 
@@ -45,10 +55,14 @@
         <!-- User description -->
         <div class="col-sm-2">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">Name:</li>
-                <li class="list-group-item">Age:</li>
-                <li class="list-group-item">Calorie Budget:</li>
-                <li class="list-group-item">Suggested:</li>
+                <li class="list-group-item userName">Name: </li>
+                <li class="list-group-item userAge">Age:</li>
+                <li class="list-group-item userHeight">Height:</li>
+                <li class="list-group-item userWeight">Weight:</li>
+                <li class="list-group-item userCalBud">Calorie Budget:</li>
+                <li class="list-group-item">Suggested Calories Intake: 2000</li>
+                <li class="list-group-item">Suggested Sugar: 25g</li>
+                <li class="list-group-item">Suggested Sodium: 2300mg</li>
             </ul>
         </div>
 
@@ -106,6 +120,10 @@
                                                 <label for="formGroupExampleInput">Please enter food consumed:</label>
                                                 <input type="text" class="form-control" id="formGroupExampleInput"
                                                     placeholder="Big Mac">
+
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Big Mac">
+                                                <button type="button" class="btn btn-success">OK</button>
+
                                             </div>
 
 
@@ -133,20 +151,27 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-
+                                            <button type="button" class="btn btn-success">Finish</button>
                                         </form>
+
+
+                                    </div>
+
+
+
+                                    <!-- the div allocated to house the nutrition facts sticker -->
+                                    <div class="col-md-6">
+                                        <p>khvgxfchvjbnhjgvhbkn</p>
                                     </div>
                                 </div>
 
-
-
-                                <!-- the div allocated to house the nutrition facts sticker -->
-                                <div class="row-md-6">
-
-                                </div>
                             </div>
+
+
+
                         </div>
                     </div>
+                </div>
 
 
                     <!-- tuesday drop downwell -->
@@ -161,11 +186,23 @@
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
                             <div class="card-body">
+=======
+                <!-- tuesday drop downwell -->
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button id="btn-css" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+TUESDAY                                  </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
 
 
 
 
-                                <!-- input food well -->
+
+                            <!-- input food well -->
 
                                 <div class="row">
                                     <div class="col-md-6">
@@ -175,49 +212,61 @@
                                                 <input type="text" class="form-control" id="formGroupExampleInput"
                                                     placeholder="Big Mac">
                                             </div>
+=======
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput">Please enter food consumed:</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Big Mac">
+
+
+                                            <button type="button" class="btn btn-success">OK</button>
+                                        </div>
 
 
 
 
 
-                                            <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
+                                        <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
 
-                                            <div>
-                                                <table class="table table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Food Name</th>
-                                                            <th scope="col">Calories</th>
-                                                            <th scope="col">Sugar (g)</th>
-                                                            <th scope="col">Sodium (mg)</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row"></th>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
+                                        <div>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Food Name</th>
+                                                        <th scope="col">Calories</th>
+                                                        <th scope="col">Sugar (g)</th>
+                                                        <th scope="col">Sodium (mg)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
 
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <button type="button" class="btn btn-success">Finish</button>
 
-                                        </form>
-                                    </div>
+                                    </form>
                                 </div>
-                                <div class="row-md-6">
-
+                                <div class="col-md-6">
                                 </div>
+
                             </div>
                         </div>
                     </div>
+                </div>
 
 
 
 
-                    <!-- wednesday drop downwell -->
+                <!-- wednesday drop downwell -->
 
                     <div class="card">
                         <div class="card-header" id="headingThree">
@@ -230,12 +279,23 @@
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#accordionExample">
                             <div class="card-body">
+=======
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button id="btn-css" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+WEDNESDAY                                      </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
 
 
 
 
 
-                                <!-- input food well -->
+
+                            <!-- input food well -->
 
                                 <div class="row">
                                     <div class="col-md-6">
@@ -245,47 +305,59 @@
                                                 <input type="text" class="form-control" id="formGroupExampleInput"
                                                     placeholder="Big Mac">
                                             </div>
+=======
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput">Please enter food consumed:</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Big Mac">
+                                            <button type="button" class="btn btn-success">OK</button>
+
+
+                                        </div>
 
 
 
-                                            <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
+                                        <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
 
-                                            <div>
-                                                <table class="table table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Food Name</th>
-                                                            <th scope="col">Calories</th>
-                                                            <th scope="col">Sugar (g)</th>
-                                                            <th scope="col">Sodium (mg)</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row"></th>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
+                                        <div>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Food Name</th>
+                                                        <th scope="col">Calories</th>
+                                                        <th scope="col">Sugar (g)</th>
+                                                        <th scope="col">Sodium (mg)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
 
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <button type="button" class="btn btn-success">Finish</button>
 
-                                        </form>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div class="row-md-6">
-
                                 </div>
+
                             </div>
                         </div>
                     </div>
+                </div>
 
 
 
 
-                    <!-- thursday drop downwell -->
+                <!-- thursday drop downwell -->
 
                     <div class="card">
                         <div class="card-header" id="headingFour">
@@ -298,12 +370,23 @@
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                             data-parent="#accordionExample">
                             <div class="card-body">
+=======
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button id="btn-css" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+THURSDAY                                          </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
 
 
 
 
 
-                                <!-- input food well -->
+
+                            <!-- input food well -->
 
                                 <div class="row">
                                     <div class="col-md-6">
@@ -313,49 +396,61 @@
                                                 <input type="text" class="form-control" id="formGroupExampleInput"
                                                     placeholder="Big Mac">
                                             </div>
+=======
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput">Please enter food consumed:</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Big Mac">
+                                            <button type="button" class="btn btn-success">OK</button>
+
+
+                                        </div>
 
 
 
 
 
-                                            <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
+                                        <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
 
-                                            <div>
-                                                <table class="table table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Food Name</th>
-                                                            <th scope="col">Calories</th>
-                                                            <th scope="col">Sugar (g)</th>
-                                                            <th scope="col">Sodium (mg)</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row"></th>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
+                                        <div>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Food Name</th>
+                                                        <th scope="col">Calories</th>
+                                                        <th scope="col">Sugar (g)</th>
+                                                        <th scope="col">Sodium (mg)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
 
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <button type="button" class="btn btn-success">Finish</button>
 
-                                        </form>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div class="row-md-6">
-
                                 </div>
+
                             </div>
                         </div>
                     </div>
+                </div>
 
 
 
 
-                    <!-- friday drop downwell -->
+                <!-- friday drop downwell -->
 
                     <div class="card">
                         <div class="card-header" id="headingFive">
@@ -368,12 +463,23 @@
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                             data-parent="#accordionExample">
                             <div class="card-body">
+=======
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button id="btn-css" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+FRIDAY                                              </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body">
 
 
 
 
 
-                                <!-- input food well -->
+
+                            <!-- input food well -->
 
                                 <div class="row">
                                     <div class="col-md-6">
@@ -383,50 +489,62 @@
                                                 <input type="text" class="form-control" id="formGroupExampleInput"
                                                     placeholder="Big Mac">
                                             </div>
+=======
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput">Please enter food consumed:</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Big Mac">
+                                            <button type="button" class="btn btn-success">OK</button>
+
+
+                                        </div>
 
 
 
 
 
 
-                                            <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
+                                        <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
 
-                                            <div>
-                                                <table class="table table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Food Name</th>
-                                                            <th scope="col">Calories</th>
-                                                            <th scope="col">Sugar (g)</th>
-                                                            <th scope="col">Sodium (mg)</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row"></th>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
+                                        <div>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Food Name</th>
+                                                        <th scope="col">Calories</th>
+                                                        <th scope="col">Sugar (g)</th>
+                                                        <th scope="col">Sodium (mg)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
 
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <button type="button" class="btn btn-success">Finish</button>
 
-                                        </form>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div class="row-md-6">
-
                                 </div>
+
                             </div>
                         </div>
                     </div>
+                </div>
 
 
 
 
-                    <!-- Saturday drop downwell -->
+                <!-- Saturday drop downwell -->
 
                     <div class="card">
                         <div class="card-header" id="headingSix">
@@ -439,13 +557,24 @@
                         <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
                             data-parent="#accordionExample">
                             <div class="card-body">
+=======
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button id="btn-css" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+SATURDAY                                                  </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
 
 
 
 
 
 
-                                <!-- input food well -->
+
+                            <!-- input food well -->
 
                                 <div class="row">
                                     <div class="col-md-6">
@@ -455,6 +584,17 @@
                                                 <input type="text" class="form-control" id="formGroupExampleInput"
                                                     placeholder="Big Mac">
                                             </div>
+=======
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput">Please enter food consumed:</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Big Mac">
+                                            <button type="button" class="btn btn-success">OK</button>
+
+
+                                        </div>
 
 
 
@@ -462,44 +602,45 @@
 
 
 
-                                            <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
+                                        <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
 
-                                            <div>
-                                                <table class="table table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Food Name</th>
-                                                            <th scope="col">Calories</th>
-                                                            <th scope="col">Sugar (g)</th>
-                                                            <th scope="col">Sodium (mg)</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row"></th>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
+                                        <div>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Food Name</th>
+                                                        <th scope="col">Calories</th>
+                                                        <th scope="col">Sugar (g)</th>
+                                                        <th scope="col">Sodium (mg)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
 
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <button type="button" class="btn btn-success">Finish</button>
 
-                                        </form>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div class="row-md-6">
-
                                 </div>
+
                             </div>
                         </div>
                     </div>
+                </div>
 
 
 
 
-                    <!-- sunday drop downwell -->
+                <!-- sunday drop downwell -->
 
                     <div class="card">
                         <div class="card-header" id="headingSeven">
@@ -512,12 +653,23 @@
                         <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
                             data-parent="#accordionExample">
                             <div class="card-body">
+=======
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
+                            <button id="btn-css" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+SUNDAY                                                      </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                        <div class="card-body">
 
 
 
 
 
-                                <!-- input food well -->
+
+                            <!-- input food well -->
 
                                 <div class="row">
                                     <div class="col-md-6">
@@ -527,51 +679,63 @@
                                                 <input type="text" class="form-control" id="formGroupExampleInput"
                                                     placeholder="Big Mac">
                                             </div>
+=======
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput">Please enter food consumed:</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Big Mac">
+                                            <button type="button" class="btn btn-success">OK</button>
+
+
+                                        </div>
 
 
 
 
 
 
-                                            <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
+                                        <!-- reults of the food nutrients e.g Cal, sodium, sugars -->
 
-                                            <div>
-                                                <table class="table table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Food Name</th>
-                                                            <th scope="col">Calories</th>
-                                                            <th scope="col">Sugar (g)</th>
-                                                            <th scope="col">Sodium (mg)</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row"></th>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
+                                        <div>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Food Name</th>
+                                                        <th scope="col">Calories</th>
+                                                        <th scope="col">Sugar (g)</th>
+                                                        <th scope="col">Sodium (mg)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
 
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <button type="button" class="btn btn-success">Finish</button>
 
-                                        </form>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div class="row-md-6">
-
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-sm-1">
+        </div>
+        <!-- <div class="col-sm-1">
 
             </div> -->
-        </div>
+    </div>
     </div>
     <!-- footer -->
     <div class="footer">
