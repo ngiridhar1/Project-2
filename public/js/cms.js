@@ -18,11 +18,11 @@ $(document).ready(function() {
   $(cmsForm).on("submit", function handleFormSubmit(event) {
     event.preventDefault();
     // Wont submit the post if we are missing a body or a title
-    if (!emailInput.val().trim() || 
+    if (!emailInput.val().trim() || !nameInput.val().trim()   ||
        !heightInput.val().trim() || !weightInput.val().trim() || 
-       !ageInput.val().trim() || !genderInput.val().trim() ||
-       !calbudgetInput.val().trim() || !indateInput.val().trim() ||
-       !caloriesInput.val().trim() 
+       !ageInput.val().trim()    || !genderInput.val().trim() ||
+       !calbudgetInput.val().trim()  
+       
        ) {
       return;
     }
@@ -30,7 +30,6 @@ $(document).ready(function() {
     var newPost = {
 	    name: nameInput.val().trim(),
       email: emailInput.val().trim(),
-     
       height: heightInput.val(),
       weight: weightInput.val(),
       age: ageInput.val(),
@@ -59,9 +58,8 @@ $(document).ready(function() {
         // If this post exists, prefill our cms forms with its data
         titleInput.val(data.title);
 		
-		nameInput.val(data.name);
+		    nameInput.val(data.name);
         emailInput.val(data.email);
-  
         heightInput.val(data.height);
         weightInput.val(data.weight),
         ageInput.val(data.age);

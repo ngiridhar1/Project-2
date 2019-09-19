@@ -14,13 +14,6 @@ module.exports = function(sequelize, DataTypes) {
         len: [40]
       }
     },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [15]
-      }
-    },
     height: {
       type: DataTypes.INTEGER
     },
