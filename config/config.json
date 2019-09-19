@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "28M@plELe@f$", 
+    "password": "process.env.MYSQL_PWD", 
     "database": "nutritionDB",
     "host": "127.0.0.1",
     "port": 3306,
