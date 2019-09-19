@@ -9,7 +9,6 @@ CREATE TABLE getfit (
   id       INT         NOT NULL AUTO_INCREMENT,
   name     VARCHAR(40) NOT NULL,
   email    VARCHAR(40) NOT NULL,
-  password VARCHAR(15) NULL,
   height   INT NOT NULL,
   weight   INT NOT NULL,
   age      INT NOT NULL,

@@ -17,7 +17,7 @@ module.exports = function(app) {
     db.Post.findOne({
       where: {
         email: req.params.email,
-        calories:  {[Op.eq]: null},
+        calories: null,
         limit: 1
     }
     })
@@ -56,7 +56,6 @@ module.exports = function(app) {
       calbudget: req.body.calbudget,
       indate: req.body.indate,
       calories: req.body.calories
-      
     })
       .then(function(dbPost) {
         res.json(dbPost);
