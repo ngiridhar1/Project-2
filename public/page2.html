@@ -1,23 +1,17 @@
-```
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../public/styles/styles.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- include the needed font from google api -->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Archivo+Black" />
     <!-- include the nutrition label plugin css file -->
     <link rel="stylesheet" type="text/css" href="/scripts/dist/css/nutritionLabel-min.css">
-    <!-- include the jquery library -->
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- include the nutrition label plugin js file -->
-    <script type="text/javascript" src="/scripts/dist/js/nutritionLabel-min.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="styles/styles.css" />-->
     <title>Get-Fit</title>
 </head>
 
@@ -40,10 +34,10 @@
     <div class="row" id="img-suggestion-well">
 
         <div class="col-sm-4">
-            <figure class="figure">
+            <!--<figure class="figure">
                 <img src="views/images/zach gal.jpg" class="figure-img img-fluid rounded" alt="..." class="rounded-circle">
 
-            </figure>
+            </figure>-->
 
         </div>
 
@@ -89,6 +83,7 @@
     <div class="day-tracker-well">
 
         <!-- Beginning of the days of the week well -->
+        <!-- monday drop downwell -->
         <div class="row">
             <div class="col">
                 <div class="accordion" id="accordionExample">
@@ -113,9 +108,9 @@
                                                 <label for="formGroupExampleInput">Please enter food consumed:</label>
 
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                    <input type="text" class="form-control" id="meal1" value="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2 getFactsBtn">Get Facts</button>
+                                                        <button class="btn btn-outline-secondary" id="getFactsBtn1" type="button" id="button-addon2">Get Facts</button>
                                                     </div>
                                                 </div>
 
@@ -187,9 +182,9 @@ TUESDAY                                  </button>
                                                 <label for="formGroupExampleInput">Please enter food consumed:</label>
 
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                    <input type="text" class="form-control" id="meal2" value="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2 getFactsBtn">Get Facts</button>
+                                                        <button class="btn btn-outline-secondary" id="getFactsBtn2" type="button" id="button-addon2">Get Facts</button>
                                                     </div>
                                                 </div>
 
@@ -255,9 +250,9 @@ WEDNESDAY                                      </button>
                                                 <label for="formGroupExampleInput">Please enter food consumed:</label>
 
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                    <input type="text" class="form-control" id="meal3" value="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2 getFactsBtn">Get Facts</button>
+                                                        <button class="btn btn-outline-secondary" id="getFactsBtn3" type="button" id="button-addon2">Get Facts</button>
                                                     </div>
                                                 </div>
 
@@ -323,9 +318,9 @@ THURSDAY                                          </button>
                                                 <label for="formGroupExampleInput">Please enter food consumed:</label>
 
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                    <input type="text" class="form-control" id="meal4" value="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2 getFactsBtn">Get Facts</button>
+                                                        <button class="btn btn-outline-secondary" id="getFactsBtn4" type="button" id="button-addon2">Get Facts</button>
                                                     </div>
                                                 </div>
 
@@ -390,9 +385,9 @@ FRIDAY                                              </button>
                                                 <label for="formGroupExampleInput">Please enter food consumed:</label>
 
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                    <input type="text" class="form-control" id="meal5" value="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2 getFactsBtn">Get Facts</button>
+                                                        <button class="btn btn-outline-secondary" id="getFactsBtn5" type="button" id="button-addon2">Get Facts</button>
                                                     </div>
                                                 </div>
 
@@ -459,9 +454,9 @@ SATURDAY                                                  </button>
                                                 <label for="formGroupExampleInput">Please enter food consumed:</label>
 
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                    <input type="text" class="form-control" id="meal6" value="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2 getFactsBtn">Get Facts</button>
+                                                        <button class="btn btn-outline-secondary" id="getFactsBtn6" type="button" id="button-addon2">Get Facts</button>
                                                     </div>
                                                 </div>
 
@@ -527,9 +522,9 @@ SUNDAY                                                      </button>
                                                 <label for="formGroupExampleInput">Please enter food consumed:</label>
 
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                    <input type="text" class="form-control" id="meal7" value="ex. Big Mac" aria-label="Recipient's username" aria-describedby="button-addon2">
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2 getFactsBtn">Get Facts</button>
+                                                        <button class="btn btn-outline-secondary" id="getFactsBtn7" type="button" id="button-addon2">Get Facts</button>
                                                     </div>
                                                 </div>
 
@@ -580,14 +575,167 @@ SUNDAY                                                      </button>
         <p>&copy; 2019 GetFitInc.</p>
         <p> YGLN GROUP</p>
     </div>
-</body>
-
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- include the nutrition label plugin js file -->
+<script type="text/javascript" src="/scripts/dist/js/nutritionLabel-min.js"></script>
+<script>
+    // Call Nutritionix API for Monday
+    $("#getFactsBtn1").click(function() {
+    var this_meal = $("#meal1").val();
+    console.log("This meal = " + this_meal)
+    var settings = {
+    async: true,
+    crossDomain: true,
+    url:
+    "https://nutritionix-api.p.rapidapi.com/v1_1/search/" + this_meal + "?fields=item_name%2Cnf_calories%2Cnf_sodium%2Cnf_sugars%2Cbrand_name",
+    method: "GET",
+    headers: {
+    "x-rapidapi-host": "nutritionix-api.p.rapidapi.com",
+    "x-rapidapi-key": "8c77ea7283mshc99fcca60fbab6bp1039aejsn16b03322f1e9"
+    }
+    };
+    $.ajax(settings).done(function(response) {
+    console.log(response);
+    });
+    });
+    </script>
+<script>
+    // Call Nutritionix API for Tuesday
+    $("#getFactsBtn2").click(function() {
+    var this_meal = $("#meal2").val();
+    console.log("This meal = " + this_meal)
+    var settings = {
+    async: true,
+    crossDomain: true,
+    url:
+    "https://nutritionix-api.p.rapidapi.com/v1_1/search/" + this_meal + "?fields=item_name%2Cnf_calories%2Cnf_sodium%2Cnf_sugars%2Cbrand_name",
+    method: "GET",
+    headers: {
+    "x-rapidapi-host": "nutritionix-api.p.rapidapi.com",
+    "x-rapidapi-key": "8c77ea7283mshc99fcca60fbab6bp1039aejsn16b03322f1e9"
+    }
+    };
+    $.ajax(settings).done(function(response) {
+    console.log(response);
+    });
+    });
+    </script>
+
+<script>
+    // Call Nutritionix API for Wednesday
+    $("#getFactsBtn3").click(function() {
+    var this_meal = $("#meal3").val();
+    console.log("This meal = " + this_meal)
+    var settings = {
+    async: true,
+    crossDomain: true,
+    url:
+    "https://nutritionix-api.p.rapidapi.com/v1_1/search/" + this_meal + "?fields=item_name%2Cnf_calories%2Cnf_sodium%2Cnf_sugars%2Cbrand_name",
+    method: "GET",
+    headers: {
+    "x-rapidapi-host": "nutritionix-api.p.rapidapi.com",
+    "x-rapidapi-key": "8c77ea7283mshc99fcca60fbab6bp1039aejsn16b03322f1e9"
+    }
+    };
+    $.ajax(settings).done(function(response) {
+    console.log(response);
+    });
+    });
+    </script>
+
+<script>
+    // Call Nutritionix API for Thursday
+    $("#getFactsBtn4").click(function() {
+    var this_meal = $("#meal4").val();
+    console.log("This meal = " + this_meal)
+    var settings = {
+    async: true,
+    crossDomain: true,
+    url:
+    "https://nutritionix-api.p.rapidapi.com/v1_1/search/" + this_meal + "?fields=item_name%2Cnf_calories%2Cnf_sodium%2Cnf_sugars%2Cbrand_name",
+    method: "GET",
+    headers: {
+    "x-rapidapi-host": "nutritionix-api.p.rapidapi.com",
+    "x-rapidapi-key": "8c77ea7283mshc99fcca60fbab6bp1039aejsn16b03322f1e9"
+    }
+    };
+    $.ajax(settings).done(function(response) {
+    console.log(response);
+    });
+    });
+    </script>
+
+<script>
+    // Call Nutritionix API for Friday
+    $("#getFactsBtn5").click(function() {
+    var this_meal = $("#meal5").val();
+    console.log("This meal = " + this_meal)
+    var settings = {
+    async: true,
+    crossDomain: true,
+    url:
+    "https://nutritionix-api.p.rapidapi.com/v1_1/search/" + this_meal + "?fields=item_name%2Cnf_calories%2Cnf_sodium%2Cnf_sugars%2Cbrand_name",
+    method: "GET",
+    headers: {
+    "x-rapidapi-host": "nutritionix-api.p.rapidapi.com",
+    "x-rapidapi-key": "8c77ea7283mshc99fcca60fbab6bp1039aejsn16b03322f1e9"
+    }
+    };
+    $.ajax(settings).done(function(response) {
+    console.log(response);
+    });
+    });
+    </script>
+
+<script>
+    // Call Nutritionix API for Saturday
+    $("#getFactsBtn6").click(function() {
+    var this_meal = $("#meal6").val();
+    console.log("This meal = " + this_meal)
+    var settings = {
+    async: true,
+    crossDomain: true,
+    url:
+    "https://nutritionix-api.p.rapidapi.com/v1_1/search/" + this_meal + "?fields=item_name%2Cnf_calories%2Cnf_sodium%2Cnf_sugars%2Cbrand_name",
+    method: "GET",
+    headers: {
+    "x-rapidapi-host": "nutritionix-api.p.rapidapi.com",
+    "x-rapidapi-key": "8c77ea7283mshc99fcca60fbab6bp1039aejsn16b03322f1e9"
+    }
+    };
+    $.ajax(settings).done(function(response) {
+    console.log(response);
+    });
+    });
+    </script>
+
+<script>
+    // Call Nutritionix API for Sunday
+    $("#getFactsBtn7").click(function() {
+    var this_meal = $("#meal7").val();
+    console.log("This meal = " + this_meal)
+    var settings = {
+    async: true,
+    crossDomain: true,
+    url:
+    "https://nutritionix-api.p.rapidapi.com/v1_1/search/" + this_meal + "?fields=item_name%2Cnf_calories%2Cnf_sodium%2Cnf_sugars%2Cbrand_name",
+    method: "GET",
+    headers: {
+    "x-rapidapi-host": "nutritionix-api.p.rapidapi.com",
+    "x-rapidapi-key": "8c77ea7283mshc99fcca60fbab6bp1039aejsn16b03322f1e9"
+    }
+    };
+    $.ajax(settings).done(function(response) {
+    console.log(response);
+    });
+    });
+    </script>
+
 </body>
 
-
-</html>```
+</html>

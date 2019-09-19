@@ -11,19 +11,17 @@ var db = require("../models");
 // Routes
 // =============================================================
 module.exports = function(app) {
-
-// Get route for returning posts of a specific user email
+  // Get route for returning posts of a specific user email
   app.get("/api/posts/category/:email", function(req, res) {
     db.Post.findOne({
       where: {
         email: req.params.email,
         calories: null,
         limit: 1
-    }
-    })
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
+      }
+    }).then(function(dbPost) {
+      res.json(dbPost);
+    });
   });
 
   // POST route for saving a new user
@@ -37,12 +35,11 @@ module.exports = function(app) {
       age: req.body.age,
       gender: req.body.gender,
       calbudget: req.body.calbudget
-    })
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
+    }).then(function(dbPost) {
+      res.json(dbPost);
+    });
   });
-  
+
   // POST route for saving a new post
   app.post("/api/page2.html", function(req, res) {
     console.log(req.body);
@@ -56,10 +53,9 @@ module.exports = function(app) {
       calbudget: req.body.calbudget,
       indate: req.body.indate,
       calories: req.body.calories
-    })
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
+    }).then(function(dbPost) {
+      res.json(dbPost);
+    });
   });
 
   // DELETE route for deleting posts
@@ -68,10 +64,9 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       }
-    })
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
+    }).then(function(dbPost) {
+      res.json(dbPost);
+    });
   });
 
   // PUT route for updating posts
