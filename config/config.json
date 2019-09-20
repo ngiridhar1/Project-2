@@ -3,7 +3,7 @@
     "username": "root",
     "password": "WkmGry}@[h639hFNTy6Mo4?(", 
     "database": "nutritionDB",
-    "host": "localhost",
+    "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"
   },
