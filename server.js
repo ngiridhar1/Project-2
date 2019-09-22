@@ -19,14 +19,6 @@ var db = require("./models");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-var connection = mysql.createConnection({
-  host: "us-cdbr-iron-east-02.cleardb.net",
-  user: "b4574f5d4a38bd",
-  password: "019cabc3",
-  database: "heroku_0f8262141827b85"
-});
-connection.connect();
-
 // Static directory
 app.use(express.static("public"));
 app.use(
